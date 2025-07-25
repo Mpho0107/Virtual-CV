@@ -1,24 +1,21 @@
-/* Reset & base styles */
-* {
+/* Base styles */
+body {
+  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #f5f5f5;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
   scroll-behavior: smooth;
 }
 
-/* Navbar */
+/* Top-right fixed navbar */
 .navbar {
   position: fixed;
   top: 0;
   right: 0;
-  background: transparent;
+  z-index: 1000;
   padding: 1rem 2rem;
-  z-index: 999;
 }
 
 .nav-links {
@@ -28,15 +25,15 @@ body {
 }
 
 .nav-links li a {
+  color: white;
   text-decoration: none;
-  color: #333;
   font-weight: bold;
   padding: 0.5rem 1rem;
-  background-color: rgba(255, 255, 255, 0.85);
+  background-color: rgba(255, 255, 255, 0.2);
   border-radius: 5px;
 }
 
-/* Hero Section */
+/* Hero (Welcome) section */
 .hero {
   height: 100vh;
   background: linear-gradient(to bottom right, #6a1b9a, #8e24aa);
@@ -47,6 +44,7 @@ body {
   justify-content: center;
   text-align: center;
   padding: 2rem;
+  padding-top: 5rem;
 }
 
 .profile-pic {
@@ -68,7 +66,12 @@ body {
   color: #ddd;
 }
 
-/* Sections */
+.location i {
+  margin-right: 6px;
+  color: #ffcccb;
+}
+
+/* Content sections */
 .section {
   min-height: 100vh;
   background-color: white;
@@ -82,9 +85,28 @@ body {
   margin-bottom: 1rem;
 }
 
+/* Footer */
 footer {
   text-align: center;
   padding: 1rem;
-  background-color: #eee;
-  color: #555;
+  background-color: #6a1b9a;
+  color: white;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .nav-links li a {
+    padding: 0.5rem;
+    display: inline-block;
+  }
+
+  .profile-pic {
+    width: 120px;
+    height: 120px;
+  }
 }
