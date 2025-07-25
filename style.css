@@ -1,37 +1,85 @@
+/* Global Reset */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+/* Base fonts & scrolling */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
+  font-family: 'Segoe UI', sans-serif;
+  scroll-behavior: smooth;
+  color: #333;
 }
-header {
-    background-color: #6a1b9a;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,.1);
+  z-index: 1000;
 }
-nav a {
-    margin: 0 15px;
-    color: white;
-    text-decoration: none;
+
+.nav-brand {
+  font-weight: bold;
+  margin-right: auto;
 }
-section {
-    padding: 20px;
-    margin: 10px;
-    background-color: white;
-    border-radius: 5px;
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
 }
-footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #6a1b9a;
-    color: white;
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
 }
-@media (max-width: 600px) {
-    nav a {
-        display: block;
-        margin: 10px 0;
-    }
+
+/* Section styling */
+.section {
+  height: 100vh;
+  padding: 6rem 2rem 2rem;
+}
+
+/* Welcome Section */
+.welcome {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to bottom right, #f5f5f5, #e0e0e0);
+  text-align: center;
+}
+
+.welcome-content {
+  max-width: 600px;
+}
+
+.profile-pic {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1.5rem;
+  border: 4px solid #ccc;
+}
+
+.title {
+  font-size: 1.2rem;
+  color: #555;
+  margin-top: 0.5rem;
+}
+
+.location {
+  margin-top: 0.75rem;
+  font-size: 1rem;
+  color: #777;
+}
+
+.location i {
+  margin-right: 0.5rem;
+  color: #e74c3c;
 }
