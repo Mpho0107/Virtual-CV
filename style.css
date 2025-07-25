@@ -80,17 +80,34 @@ body {
 
 /* Content sections */
 .section {
-  min-height: 100vh;
   background-color: white;
-  padding: 4rem 2rem;
+  padding: 2rem;
+  margin: 2rem auto;
+  border-radius: 10px;
   max-width: 900px;
-  margin: 0 auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
 }
 
-.section h2 {
+.section h2, .section h3 {
   color: #6a1b9a;
   margin-bottom: 1rem;
 }
+
+.section ul {
+  padding-left: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.section ul li {
+  margin-bottom: 0.5rem;
+}
+
+.section p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
 
 /* Footer */
 footer {
