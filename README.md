@@ -1,13 +1,12 @@
 # Virtual-CV
-readme_text = """# MP Thabane Portfolio Website
 
-## 📌 Project Title
+##  Project Title
 **MPHO PORTIA THABANE – Virtual CV Portfolio Website**
 
-## 📝 Description
+## Description
 This is a personal portfolio website created by MP Thabane, a final-year BSc Information Technology student at North-West University. The website serves as a virtual CV and showcases academic achievements, technical skills, projects, and contact information. It is designed to enhance post-graduation prospects by providing a professional online presence.
 
-## 🌟 Features
+## Features
 - About Me section with academic and career summary
 - Resume section with education, certifications, and skills
 - Projects section with descriptions and GitHub links
@@ -18,12 +17,9 @@ This is a personal portfolio website created by MP Thabane, a final-year BSc Inf
 - Profile picture and downloadable CV
 - Clickable links to GitHub repositories and LinkedIn profile
 
-## 🛠️ Technologies Used
+## Technologies Used
 - HTML5
 - CSS3
 - JavaScript
 - GitHub Pages (for hosting)
-
-## 🚀 Setup Instructions
-1. Clone the repository:
    
