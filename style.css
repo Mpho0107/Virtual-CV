@@ -64,9 +64,18 @@ body {
   }
 }
 
+
+.hidden {
+  display: none;
+}
+
 /* Hero (Welcome) section */
+
 .hero {
-  height: 100vh;
+  position: fixed; /* Make it stay in place */
+  top: 60px; /* Adjust if you have a top bar */
+  width: 100%;
+  height: calc(100vh - 60px); /* Adjust height if there's a top bar */
   background: linear-gradient(to bottom right, #6a1b9a, #8e24aa);
   color: white;
   display: flex;
@@ -75,7 +84,7 @@ body {
   justify-content: center;
   text-align: center;
   padding: 2rem;
-  padding-top: 5rem;
+  z-index: 10;
 }
 
 
