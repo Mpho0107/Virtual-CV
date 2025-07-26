@@ -72,10 +72,10 @@ body {
 /* Hero (Welcome) section */
 
 .hero {
-  position: fixed; /* Make it stay in place */
-  top: 60px; /* Adjust if you have a top bar */
+  position: sticky;
+  top: 0;
   width: 100%;
-  height: calc(100vh - 60px); /* Adjust height if there's a top bar */
+  height: auto; /* or a fixed height if needed */
   background: linear-gradient(to bottom right, #6a1b9a, #8e24aa);
   color: white;
   display: flex;
