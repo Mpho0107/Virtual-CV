@@ -11,7 +11,7 @@ body {
 
 /* Top-right fixed navbar */
 .navbar {
-  position: sticky;
+  position: relative;
   top: 0;
   width: 100%;
   background-color: #6a1b9a; /* Match your hero section */
