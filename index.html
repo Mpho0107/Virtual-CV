@@ -9,19 +9,26 @@
 </head>
 <body>
 
+  
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById("navMenu");
+      menu.classList.toggle("hidden");
+    }
+  </script>
+</body>
+</html>
+
   <!-- Hamburger Icon -->
-<div class="hamburger" onclick="toggleMenu()">☰</div>
+<div id="hamburger" onclick="toggleMenu()">☰</div>
 
 <!-- Navigation Menu -->
-<nav id="navMenu" class="nav-links hidden">
+<nav id="navMenu" class="hidden">
   <a href="#about">About Me</a>
   <a href="#resume">Resume</a>
-  <a href="#projects">Projects</a>
-  <a href="#skills">Skills</a>
-  <a href="#languages">Languages</a>
-  <a href="#certifications">Certifications</a>
-  <a href="#contact">Contact</a>
+  <!-- other links -->
 </nav>
+
   
   <!-- Hero / Welcome Section -->
   <section class="hero">
@@ -181,20 +188,3 @@
     <p>LinkedIn: <a href="https://www.linkedin.com/in/mpho-thabane-6b3612279" target="_blank">LinkedIn Profile</a></p>
     <p>GitHub: <a href="https://github.com/Mpho0107" target="_blank">github.com/Mpho0107</a></p>
   </section>
-
-  <script>
-  const hamburger = document.getElementById('hamburger');
-  const navLinks = document.getElementById('nav-links');
-
-  hamburger.addEventListener('click', () => {
-    navLinks.classList.toggle('show');
-  });
-      </script>
-
-  <footer>
-    <p>&copy; 2025 MP Thabane. All rights reserved.</p>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
-</html>
