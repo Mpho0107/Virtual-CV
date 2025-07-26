@@ -18,19 +18,50 @@ body {
   padding: 1rem 2rem;
 }
 
+/* Basic styles */
 .nav-links {
-  list-style: none;
   display: flex;
-  gap: 1rem;
+  gap: 20px;
 }
 
-.nav-links li a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  padding: 0.5rem 1rem;
-  background-color: rgba(255, 255, 255, 0.2);
-  border-radius: 5px;
+/* Burger icon styling */
+.menu-toggle {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 999;
+}
+
+/* Responsive behavior */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: 60px;
+    right: 0;
+    background-color: #111;
+    width: 200px;
+    padding: 20px;
+    z-index: 998;
+  }
+
+  .nav-links a {
+    color: white;
+    padding: 10px 0;
+    text-decoration: none;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
 }
 
 /* Hero (Welcome) section */
