@@ -71,11 +71,11 @@ body {
 
 /* Hero (Welcome) section */
 
+
 .hero {
-  position: sticky;
-  top: 0;
+  position: relative; /* Remove sticky */
   width: 100%;
-  height: auto; /* or a fixed height if needed */
+  height: 100vh; /* Full screen height */
   background: linear-gradient(to bottom right, #6a1b9a, #8e24aa);
   color: white;
   display: flex;
